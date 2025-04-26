@@ -1,4 +1,8 @@
-from lib import EnvConfig 
+# test.py
+
+# python3.12 tests/test_basic.py
+
+from env_config_lib import EnvConfig 
 
 def main():
     env = EnvConfig(
@@ -12,7 +16,7 @@ def main():
             "TEST7": dict,
             "TEST8": set,
         },
-        path = ".env"
+        path = "tests/.env"
     )
 
     print(env.get("TEST2"))
